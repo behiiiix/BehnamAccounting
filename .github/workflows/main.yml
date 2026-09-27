@@ -26,7 +26,7 @@ jobs:
       working-directory: BehnamAccounting
 
     - name: Build Debug APK
-      run: ./gradlew :app:assembleDebug
+      run: ./gradlew :app:assembleDebug --stacktrace --no-daemon
       working-directory: BehnamAccounting
 
     - name: Upload APK Artifact
